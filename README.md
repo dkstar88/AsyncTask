@@ -17,30 +17,30 @@ Demo Codes
 
 This code, sleeps for 5 seconds, and shows message box.
 
-  Run(TAsyncTask,
-    // Execute
-    procedure (ATask: IAsyncTask)
-    begin
-      Sleep(5*1000);
-    end,
-    // Finish
-    procedure (ATask: IAsyncTask)
-    begin
-        ShowMessage('Finished');
-    end
-  );
+    Run(TAsyncTask,
+      // Execute
+      procedure (ATask: IAsyncTask)
+      begin
+        Sleep(5*1000);
+      end,
+      // Finish
+      procedure (ATask: IAsyncTask)
+      begin
+          ShowMessage('Finished');
+      end
+    );
   
   
 This code downloads google's logo png file, and displays in TImage component
 
-  AniIndicator1.Visible := True;
-  Run(THttpAsyncTaskBitmap.Create('http://www.google.com/images/nav_logo129.png'),
-    // Finish
-    procedure (ATask: IAsyncTask)
-    begin
-      Image1.Bitmap := (ATask as IHttpBitmapResponse).Bitmap;
-      AniIndicator1.Visible := False;
-    end
-  );
+    AniIndicator1.Visible := True;
+    Run(THttpAsyncTaskBitmap.Create('http://www.google.com/images/nav_logo129.png'),
+      // Finish
+      procedure (ATask: IAsyncTask)
+      begin
+        Image1.Bitmap := (ATask as IHttpBitmapResponse).Bitmap;
+        AniIndicator1.Visible := False;
+      end
+    );
   
   

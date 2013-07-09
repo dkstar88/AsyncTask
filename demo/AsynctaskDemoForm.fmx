@@ -1,0 +1,136 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 337
+  ClientWidth = 583
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Text1: TText
+    Color = claBlack
+    Font.Size = 20.000000000000000000
+    Height = 41.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Async Task Demo'
+    Width = 545.000000000000000000
+  end
+  object Panel1: TPanel
+    Height = 265.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 249.000000000000000000
+    TabOrder = 1
+    object Text2: TText
+      Color = claBlack
+      Font.Size = 13.000000000000000000
+      Font.Style = [fsBold]
+      Height = 25.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'HTTP Task'
+      Width = 233.000000000000000000
+    end
+    object Image1: TImage
+      Height = 177.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Width = 233.000000000000000000
+      object AniIndicator1: TAniIndicator
+        Align = alCenter
+        Enabled = True
+        Height = 66.000000000000000000
+        Visible = False
+        Width = 66.000000000000000000
+      end
+    end
+    object Text3: TText
+      Color = claBlack
+      Height = 25.000000000000000000
+      Position.X = 176.000000000000000000
+      Position.Y = 40.000000000000000000
+      Text = 'Image'
+      Width = 66.000000000000000000
+    end
+    object Button1: TButton
+      Font.Size = 13.000000000000000000
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 33.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 224.000000000000000000
+      TabOrder = 3
+      Text = 'Download Image'
+      Width = 233.000000000000000000
+      OnClick = Button1Click
+    end
+  end
+  object Panel2: TPanel
+    Height = 265.000000000000000000
+    Position.X = 272.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 289.000000000000000000
+    TabOrder = 2
+    object Memo1: TMemo
+      Locked = True
+      Height = 177.000000000000000000
+      Position.X = 12.000000000000000000
+      Position.Y = 40.000000000000000000
+      TabOrder = 0
+      Width = 268.000000000000000000
+    end
+    object Text4: TText
+      Color = claBlack
+      Font.Size = 13.000000000000000000
+      Font.Style = [fsBold]
+      Locked = True
+      Height = 25.000000000000000000
+      Position.X = 12.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Sleeping Tasks'
+      Width = 268.000000000000000000
+    end
+    object Button2: TButton
+      Font.Size = 13.000000000000000000
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 33.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 224.000000000000000000
+      TabOrder = 2
+      Text = '5s'
+      Width = 73.000000000000000000
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Font.Size = 13.000000000000000000
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 33.000000000000000000
+      Position.X = 112.000000000000000000
+      Position.Y = 224.000000000000000000
+      TabOrder = 3
+      Text = '10s'
+      Width = 73.000000000000000000
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Font.Size = 13.000000000000000000
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 33.000000000000000000
+      Position.X = 208.000000000000000000
+      Position.Y = 224.000000000000000000
+      TabOrder = 4
+      Text = '20s'
+      Width = 73.000000000000000000
+      OnClick = Button4Click
+    end
+  end
+end
